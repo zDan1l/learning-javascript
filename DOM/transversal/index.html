@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transversal</title>
+    <style>
+        body {
+            background-color: rgb(70, 63, 63);
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            flex-wrap: wrap;
+        }
+        
+        .card {
+            background-color: rgb(255, 255, 255);
+            border-radius: 60px;
+            width: 20%;
+            margin: 10px 30px;
+            display: grid;
+            grid-template-areas: "foto tulisan tulisan tulisan close close";
+            grid-auto-flow: column;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5), -2px -2px 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        .card img {
+            grid-area: foto;
+            width: 50px;
+            border-radius: 100%;
+        }
+        
+        .nama,
+        .nomor {
+            grid-area: tulisan;
+            margin-top: 20px;
+        }
+        
+        .nomor {
+            margin-top: 40px;
+        }
+        
+        .close:hover {
+            color: #ff0000;
+            cursor: default;
+        }
+        
+        .close {
+            font-weight: bolder;
+            ;
+            display: grid;
+            grid-area: close;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="DSCF9300.jpg" alt="foto">
+            <span class="nama">Ziyaa Danil Mubarok</span>
+            <span class="nomor">085733658521</span>
+            <a href="" class="close">x</a>
+        </div>
+        <div class="card">
+            <img src="DSCF9300.jpg" alt="foto">
+            <span class="nama">Andi sumargo</span>
+            <span class="nomor">085733658521</span>
+            <a href="" class="close">x</a>
+        </div>
+        <div class="card">
+            <img src="DSCF9300.jpg" alt="foto">
+            <span class="nama">Wensky agus</span>
+            <span class="nomor">085733658521</span>
+            <a href="" class="close">x</a>
+        </div>
+        <div class="card">
+            <img src="DSCF9300.jpg" alt="foto">
+            <span class="nama">Zidan al maghfuroh</span>
+            <span class="nomor">085733658521</span>
+            <a href="" class="close">x</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
